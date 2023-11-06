@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f8f7e7;
+  overflow-x: hidden;
+  background-color: burlywood;
+}
+
+header {
+  overflow-x: hidden;
+}
+header .logoytitulo {
+  display: flex;
+  align-items: flex-start;
+  padding: 100px;
+  background-color: burlywood;
+  border-radius: 10px;
+  justify-content: center;
+  transition: transform 0.3s;
+}
+header .logoytitulo h1 {
+  font-size: 70px;
+  color: #2e897f;
+  text-align: center;
+  font-style: normal;
+  transition: transform 0.5s;
+  margin-top: 40px;
+}
+header .logoytitulo :hover {
+  transform: scale(1.2);
+  margin-left: 15px;
+}
+header .logoytitulo img {
+  width: auto;
+  height: 200px;
+  margin-right: 50px;
+  border-radius: 25px;
+  transition: transform 0.5s;
+}
+header .logoytitulo .caja-since-2009 {
+  display: flex;
+  align-items: center;
+  margin-top: 19px;
+  text-align: center;
+  transition: transform 0.5s;
+}
+header .logoytitulo h2 {
+  display: inline-block;
+  color: #2e897f;
+  background-color: #f9f1c8;
+  font-style: italic;
+  font-size: 15px;
+  border-radius: 10px;
+  padding: 5px;
+}
+header nav {
+  display: flex;
+  background-color: burlywood;
+  padding: 5px;
+  font-size: 50px;
+  transition: transform 0.5s;
+  text-align: center;
+  border-bottom: solid #2e897f 4px;
+}
+header nav ul .nav {
+  display: flex;
+  justify-content: space-between;
+}
+header nav h4 {
+  display: flex;
+  justify-content: center;
+  background-color: #2e897f;
+  align-items: center;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0px;
+}
+footer a {
+  text-decoration: none;
+  color: snow;
+}
+footer .listafooter {
+  list-style-type: none;
+  padding-right: 5%;
+  display: flex;
+  justify-content: space-between; /* Distribuye los elementos de manera equitativa */
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 100px;
+  background-color: burlywood;
+  border: solid gray 1px;
+}
+.cards .card {
+  margin-bottom: 75px;
+}
+.cards .card .card-text {
+  transition: transform 0.8s;
+}
+.cards .card img {
+  border-radius: 100px;
+  transition: transform 0.8s;
+}
+.cards .card :hover {
+  transform: scale(1.1);
+  margin-left: 15px;
+  padding-bottom: 10px;
+}
+.cards .card :hover .card-body {
+  padding: 10px;
+}
+
+.alert {
+  display: flex;
+  font-size: 50px;
+  padding: 100px;
+  justify-content: center;
+}
+
+.listas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 70px;
+  border-radius: 1%;
+  background-color: #2e897f;
+}
+.listas h4 {
+  text-decoration: solid;
+  font-size: 2rem;
+}
+
+.cardsnosotros {
+  padding: 20px;
+}
+.cardsnosotros .row {
+  padding: 20px;
+}
+.cardsnosotros .card-title {
+  display: flex;
+  justify-content: center;
+}
+
+.carrusel {
+  border-bottom: solid #2e897f 4px;
+}
+
+.titulodestacado {
+  border-bottom: solid gray 5px;
+}
+
+.cardenvios {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.cardenvios img {
+  transform: scale(0.5);
+}
+.cardenvios .card-body p {
+  color: black;
+  background-color: burlywood;
+  border-radius: 35%;
+  padding: 25px;
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: solid black;
+}
+
+.nueces {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.nueces p {
+  color: black;
+  background-color: burlywood;
+  text-align: center;
+  text-decoration: solid black;
+}
+
+.dropdown {
+  display: none;
+}
+
+@media (max-width: 580px) {
+  body {
+    width: 75% align-items center;
+    text-align: center;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .logoytitulo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .logoytitulo img {
+    width: auto;
+    height: 50px;
+    display: flex;
+  }
+  .logoytitulo h1 {
+    display: none;
+  }
+  .logoytitulo .caja-since-2009 h2 {
+    display: none;
+  }
+  .cardenvios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .nueces {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 1023px) {
+  body {
+    width: 75% align-items center;
+    text-align: center;
+    overflow-x: hidden;
+  }
+  .logoytitulo img {
+    width: auto;
+    height: 90px;
+    border-radius: 100%;
+  }
+  .caja-since-2009 {
+    display: none;
+  }
+  /* header menu */
+  .nav {
+    display: none;
+  }
+  .dropdown {
+    display: inline;
+    display: flex;
+    justify-content: start;
+    padding: 75px;
+    margin-bottom: 100px;
+  }
+  .card {
+    border: solid black;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

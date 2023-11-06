@@ -1,0 +1,25 @@
+// Mi header y nav
+nav{
+        display: flex;
+        background-color: burlywood;
+        padding: 5px;
+        justify-content: space-between; 
+        font-size: 50px;
+        transition: transform 1.5s; 
+        text-align: center;
+        padding-left: -5px;
+    ul {
+        li{
+            padding: 20px;
+            a{
+                text-decoration: none;
+                color: black;
+                transition: transform 1.5s;
+            a:hover{
+                transform:scale(1.2);
+                margin-left: 15px;
+                }
+            }
+        }
+    }
+}

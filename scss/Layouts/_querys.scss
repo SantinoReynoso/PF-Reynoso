@@ -1,0 +1,75 @@
+$mobile-width: 580px;
+$tablet-width: 1023px;
+
+.dropdown{
+    display: none;
+}
+@media (max-width: $mobile-width) {
+    body{
+        width: 75%
+        align-items center;
+        text-align: center;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+    .logoytitulo{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    img{
+        @include sizes(auto, 50px );
+        display: flex;
+        }
+    h1{
+        display: none;
+    }
+    .caja-since-2009{
+        h2{
+            display: none;
+            }
+        }
+    }
+    .cardenvios{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .nueces{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media (max-width:$tablet-width) {
+    body{
+        width: 75%
+        align-items center;
+        text-align: center;
+        overflow-x: hidden;
+        }
+    .logoytitulo img{
+        @include sizes(auto, 90px );
+       border-radius: 100%;
+    }
+    .caja-since-2009{
+       display: none;
+    }
+   /* header menu */
+   .nav{
+       display: none;
+   }
+   .dropdown{
+       display: inline;
+       display: flex;
+       justify-content: start;
+       padding: 75px;
+       margin-bottom: 100px;
+   }
+   .card{
+       border: solid black;
+   }
+}

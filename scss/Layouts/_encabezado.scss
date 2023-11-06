@@ -1,0 +1,73 @@
+//mi encabezado
+@mixin sizes ($width, $height){
+    width: $width;
+    height: $height;
+}
+header{
+    overflow-x: hidden;
+.logoytitulo {
+    display: flex;
+    align-items: flex-start;
+    padding: 100px;
+    background-color: burlywood;
+    border-radius: 10px;
+    justify-content: center;
+    transition: transform 0.3s;
+
+    h1{
+        font-size: 70px;
+    color: #2e897f ;
+    text-align: center;
+    font-style: normal;
+    transition: transform 0.5s;
+    margin-top: 40px;
+    }
+
+    :hover{
+        transform:scale(1.2);
+        margin-left: 15px;
+    }
+    img {
+        @include sizes(auto, 200px );
+        margin-right: 50px;
+        border-radius: 25px; 
+        transition: transform 0.5s;
+    }
+    .caja-since-2009{
+        display: flex;
+        align-items: center;
+        margin-top: 19px;
+        text-align: center; 
+        transition: transform 0.5s; 
+    }
+    h2{
+    display: inline-block;
+    color: #2e897f;
+    background-color:  #f9f1c8;
+    font-style: italic;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 5px;
+    }
+}
+// Mi nav
+nav{
+    display: flex;
+    background-color: burlywood;
+    padding: 5px;
+    font-size: 50px;
+    transition: transform 0.5s; 
+    text-align: center;
+    border-bottom: solid #2e897f 4px;
+    ul .nav{
+        display: flex;
+        justify-content: space-between;
+        }
+    h4{
+        display: flex;
+        justify-content: center;
+        background-color: #2e897f;
+        align-items: center;
+    }
+}
+}

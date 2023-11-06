@@ -1,0 +1,94 @@
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 100px;
+    background-color: burlywood;
+    border:solid gray 1px;
+    .card{
+        .card-text{
+            transition: transform 0.8s;
+        }
+        margin-bottom: 75px;
+        img{
+            border-radius: 100px;
+            transition: transform 0.8s;
+        } 
+        :hover{
+            transform:scale(1.1);
+            margin-left: 15px;
+            padding-bottom: 10px;
+            .card-body{
+                padding: 10px;
+            }
+        }
+    }
+}
+.alert{
+    display: flex;
+    font-size: 50px;
+    padding: 100px;
+    justify-content: center;
+}
+.listas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px;
+    border-radius: 1%;
+    background-color: #2e897f;
+    h4{
+        text-decoration: solid;
+        font-size: 2rem;
+        
+    }
+}
+.cardsnosotros{
+    padding: 20px;
+    .row{
+        padding: 20px;
+    }
+    .card-title{
+        display: flex;
+        justify-content: center;
+    }
+}
+.carrusel{
+    border-bottom: solid #2e897f 4px;
+}
+.titulodestacado{
+    border-bottom: solid gray 5px;
+}
+.cardenvios{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    img{
+        transform: scale(0.5);
+    }
+    .card-body{
+        p{
+            color: $colorsito;
+            background-color: burlywood;
+            border-radius: 35%;
+            padding: 25px;
+            text-align: center;
+            font-size: 2rem;
+            text-decoration: solid black;
+        }
+    }
+    
+}
+.nueces{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    p{
+        color: $colorsito;
+        background-color: burlywood;
+        text-align: center;
+        text-decoration: solid black;
+    }
+}
