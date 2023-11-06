@@ -193,6 +193,10 @@ footer .listafooter {
   text-decoration: solid black;
 }
 
+.formulario {
+  padding: 50px;
+}
+
 .dropdown {
   display: none;
 }
