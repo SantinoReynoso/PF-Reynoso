@@ -203,7 +203,8 @@ footer .listafooter {
 
 @media (max-width: 580px) {
   body {
-    width: 75% align-items center;
+    width: 75%;
+    align-items: center;
     text-align: center;
     overflow-x: hidden;
     margin: 0;
@@ -244,10 +245,21 @@ footer .listafooter {
   header .card {
     display: none;
   }
+  main .alertaa .alert {
+    border-radius: 50%;
+    font-size: 30px;
+  }
+  .titulodestacado .alert .titulodestacado .alert {
+    font-size: 30px;
+  }
+  .alert {
+    font-size: 25px;
+  }
 }
 @media (max-width: 1023px) {
   body {
-    width: 75% align-items center;
+    width: 75%;
+    align-items: center;
     text-align: center;
     overflow-x: hidden;
   }
@@ -275,6 +287,12 @@ footer .listafooter {
   }
   header .card {
     display: none;
+  }
+  main .alertaa {
+    border-radius: 50%;
+  }
+  .titulodestacado .alert {
+    font-size: 30px;
   }
 }
 
