@@ -23,10 +23,7 @@ header{
     margin-top: 40px;
     }
 
-    :hover{
-        transform:scale(1.2);
-        margin-left: 15px;
-    }
+    
     img {
         @include sizes(auto, 200px );
         margin-right: 50px;
